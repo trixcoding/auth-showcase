@@ -71,7 +71,7 @@ export default function AboutPage() {
 
         <div className="border-t border-gray-100 pt-6">
           <a
-            href="https://github.com/YOUR-USERNAME/auth-showcase"
+            href="https://github.com/trixcoding/auth-showcase"
             target="_blank"
             rel="noreferrer"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg px-5 py-2.5 transition text-sm"
