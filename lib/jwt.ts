@@ -1,5 +1,5 @@
 import { SignJWT, jwtVerify } from 'jose';
-
+import { cookies } from 'next/headers';
 const secret = new TextEncoder().encode(process.env.JWT_SECRET);
 const JWT_DURATION = '15m'; // Access token کوتاه‌عمر
 const REFRESH_DURATION = '7d';
@@ -33,3 +33,11 @@ export interface JwtPayload {
                                                         return null;
                                                           }
                                                           }
+
+
+export async function getJwtUser(): Promise<JwtPayload | null> {
+  const cookieStore = await cookies();
+  const token = cookieStore.get('access_token')?.value;
+  if (!token) return null;
+  return verifyToken(token);
+}
