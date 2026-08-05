@@ -19,21 +19,21 @@ export default function RegisterForm() {
                                       type="text"
                                               name="name"
                                                       placeholder="نام"
-                                                              className="border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                              className="text-black border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                                                     />
                                                                           <input
                                                                                   type="email"
                                                                                           name="email"
                                                                                                   placeholder="ایمیل"
                                                                                                           required
-                                                                                                                  className="border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                                                                                  className="text-black border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                                                                                                         />
                                                                                                                               <input
                                                                                                                                       type="password"
                                                                                                                                               name="password"
                                                                                                                                                       placeholder="رمز عبور"
                                                                                                                                                               required
-                                                                                                                                                                      className="border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                                                                                                                                      className="text-black border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                                                                                                                                                             />
                                                                                                                                                                                   {state.error && <p className="text-red-500 text-sm">{state.error}</p>}
                                                                                                                                                                                         <button
