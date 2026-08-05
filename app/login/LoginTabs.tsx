@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import SessionLoginForm from './SessionLoginForm';
-
+import JwtLoginForm from './JwtLoginForm'; 
 export default function LoginTabs() {
   const [tab, setTab] = useState<'session' | 'jwt'>('session');
 
