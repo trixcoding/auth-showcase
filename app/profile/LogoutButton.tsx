@@ -1,5 +1,3 @@
-'use client';
-
 import { logoutAction } from './actions';
 
 export default function LogoutButton({ method }: { method: 'session' | 'jwt' }) {
