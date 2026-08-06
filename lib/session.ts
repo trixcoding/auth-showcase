@@ -2,7 +2,7 @@ import pool from '@/lib/db';
 import { randomBytes } from 'crypto';
 import { cookies } from 'next/headers';
 
-const SESSION_DURATION_MS = 7 * 24 * 60 * 60 * 1000; // ۷ روز
+const SESSION_DURATION_MS = 7 * 24 * 60 * 60 * 1000; 
 
 export async function createSession(userId: number): Promise<string> {
   const sessionId = randomBytes(32).toString('hex');
