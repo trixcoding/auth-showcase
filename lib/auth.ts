@@ -12,13 +12,13 @@ export interface CurrentUser {
 }
 
 export async function getCurrentUser(): Promise<CurrentUser | null> {
-  // اول Session رو چک کن
+ 
   const sessionUser = await getSessionUser();
   if (sessionUser) {
     return { ...sessionUser, method: 'session' };
   }
 
-  // بعد JWT رو چک کن
+  
   const jwtPayload = await getJwtUser();
   if (jwtPayload) {
     const result = await pool.query(
